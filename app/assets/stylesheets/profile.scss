@@ -1,0 +1,171 @@
+// Color variables
+$white: #FFFFFF;
+$whiteTransparent: rgba(255, 255, 255, 0.3);
+$black: #000000;
+$blueGray: #90ADC6;
+$lightBlueGray: #D9E4EC;
+$blueGrayTransparent: rgba(144, 173, 198, 0.6);
+$pewter: #E9EAEC;
+$gold: #914110;
+$yellow: #FAD02C;
+$folderYellow: #e69f34;
+$darkBlue: #333652;
+$darkerBlue: #050A30;
+$mistyBlue: #385E72;
+$boxShadow: #6E6E6E;
+
+// Profile Styles
+/* Profile Link from Home Page */
+.profile__icon-link {
+  position: absolute;
+  right: 3.5vh;
+  top: 3.5vh;
+  width: 6vh;
+  height: 6vh;
+  padding: 0.5vh;
+  border-radius: 1vh;
+  transition: 0.2s;
+  .profile__icon {
+    height: 100%;
+  }
+}
+.profile__icon-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem $white;
+}
+/* Profile Link from Home Page */
+.profile__main-wrapper {
+  .main__nav {
+    margin-bottom: 4rem;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .profile__pic-link {
+    text-decoration: none;
+    color: $mistyBlue;
+  }
+  .profile-pic__upload {
+    width: 3vh;
+    height: 3vh;
+    transition: 0.1s ease-in-out;
+  }
+  .profile-pic__upload:hover {
+    color: $folderYellow;
+  }
+  .profile__picture-container {
+    width: 25vh;
+    height: 25vh;
+    margin-bottom: 2vh;
+    border-radius: 50%;
+    border: 0.2rem solid $blueGray;
+  }
+  .info {
+    width: 100%;
+    min-height: 4.5rem; /* For Testing */
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 2.658rem;
+    border: 0.2rem solid $white;
+    background: $blueGray;
+    box-shadow: 0 0.5rem 1.5rem $blueGrayTransparent;
+    .top-section-content__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .work-section__title {
+      font-family: 'Prompt', sans-serif;
+      font-size: 2.658rem;
+      color: $white;
+    }
+    .add__link {
+      .work-section__title {
+        font-style: italic;
+        color: $white;
+        font-size: 1.7rem;
+      }
+      .work-section__title:hover {
+        text-decoration: underline;
+      }
+      text-decoration: none;
+      color: $darkBlue;
+    }
+  }
+
+  .work-submit-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    // width: 60%;
+    // height: 80%;
+    width: 0rem;
+    height: 0rem;
+    overflow: scroll;
+    padding: 2rem 4rem;
+    border: 0.2rem solid $white;
+    box-shadow: 0 0.7rem 5rem $boxShadow;
+    border-radius: 1rem;
+    background: $blueGray;
+    .form__section {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 90%;
+      height: 100rem;
+      .field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: auto;
+        color: $pewter;
+        label {
+          font-family: 'Prompt', sans-serif;
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
+        input,
+        select {
+          width: 50%;
+          height: 3rem;
+        }
+        textarea {
+          font-family: 'Prompt', sans-serif;
+          width: 100%;
+          height: 15rem;
+        }
+        input,
+        select,
+        textarea {
+          font-size: 1.5rem;
+          padding: 0.5rem;
+          border: none;
+          border-radius: 0.55rem;
+        }
+      }
+      .save__btn {
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 20rem;
+        height: 5rem;
+        border: none;
+        border-radius: 0.7rem;
+        background: $mistyBlue;
+        color: $pewter;
+        transition: 0.2s ease-out;
+      }
+      .save__btn:hover {
+        transform: scale(1.05);
+        background: $darkerBlue;
+      }
+    }
+  }
+  .open__animation-info {
+    width: 60%;
+    height: 80%;
+    // transition: width 0.2s, height 0.5s;
+  }
+}
+
+// Profile

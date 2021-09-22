@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ThePortfolioCreator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= javascript_pack_tag 'Index' %>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/assets/stylesheets/main.scss">
+    <link rel="stylesheet" href="app/assets/stylesheets/profile.scss">
+  </head>
+
+  <body>
+    <header class="main__header">
+      <div class="logo__wrapper">
+        <p class="logo__text">ThePortfolio</p><%= image_tag "ThePortfolio_Creator_Logo_7_2.png", :class => "logo" %><p class="logo__text">Creator</p>
+      </div>
+    </header>
+
+    <%= yield %>
+  </body>
+</html>
