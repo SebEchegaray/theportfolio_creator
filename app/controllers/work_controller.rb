@@ -1,9 +1,4 @@
 class WorkController < ApplicationController
-  def index
-    @work_experiences = WorkExperience.all
-    render 'show'
-  end
-
   def create
     work_experience = WorkExperience.new(
       title: params[:title],
