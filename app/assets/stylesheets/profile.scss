@@ -97,16 +97,17 @@ $boxShadow: #6E6E6E;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%; left: 150%; transform: translate(-50%, -50%);
-    width: 60%;
-    height: 80%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+    // width: 60%;
+    // height: 80%;
+    width: 0rem;
+    height: 0rem;
     overflow: scroll;
     padding: 2rem 4rem;
     border: 0.2rem solid $white;
     box-shadow: 0 0.7rem 5rem $boxShadow;
     border-radius: 1rem;
     background: $blueGray;
-    transition: 0.3s;
     .form__section {
       display: flex;
       flex-direction: column;
@@ -161,32 +162,10 @@ $boxShadow: #6E6E6E;
     }
   }
   .open__animation-info {
-    left: 50%;
-    transition: 0.3s;
-    // animation-name: sizing;
-    // animation-duration: 2s;
-    // animation-timing-function: ease-out;
-    // animation-iteration-count: 1;
+    width: 60%;
+    height: 80%;
+    // transition: width 0.2s, height 0.5s;
   }
 }
 
 // Profile
-
-// Keyframes
-// @keyframes sizing {
-//   0% {
-//     left: 150%;
-//   }
-
-//   33% {
-//     left: 20%;
-//   }
-
-//   85% {
-//     left: 60%;
-//   }
-
-//   100% {
-//     left: 50%;
-//   }
-// }

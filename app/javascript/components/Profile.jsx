@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Icons } from '../images/Icons'
+import { Component } from 'react'
+import { gsap } from 'gsap'
 import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
-import { WorkExperience } from '../components/WorkExperience'
 
 const { useEffect, useRef } = React
 
@@ -52,10 +53,6 @@ const Profile = () => {
           </a>
         </div>
 
-        <div className="content__information">
-          <WorkExperience />
-        </div>
-
         {/* Work Experience submit form */}
         <form action="/profile/work" method="POST" className={`work-submit-form ${isActive ? "open__animation-info" : ""}`}>
         <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
@@ -100,7 +97,7 @@ const Profile = () => {
               <label htmlFor="description">Description</label>
               <textarea name="description"></textarea>
             </div>
-            <button className="save__btn" onClick={formHandleClick}>Save</button>
+            <button className="save__btn">Save</button>
           </section>
         </form>
         {/* Work Experience submit form */}
