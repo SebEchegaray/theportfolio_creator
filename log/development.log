@@ -31418,3 +31418,652 @@ Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-22 11:32:3
   
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
   
+Started GET "/profile" for ::1 at 2021-09-24 15:17:45 +1000
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 668.2ms | Allocations: 59430)
+Completed 200 OK in 706ms (Views: 681.6ms | ActiveRecord: 0.0ms | Allocations: 61986)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:17:46 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:17:46 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:18:01 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"DJ", "company_name"=>"Matzzo", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Music", "description"=>"This is how it's done\r\n"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2327)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperience):
+  
+app/controllers/work_controller.rb:8:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:18:53 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 6665)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms | Allocations: 7231)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:18:53 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:18:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:18:56 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 6633)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 6994)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:18:56 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:18:56 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:19:10 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"", "company_name"=>"", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"", "description"=>""}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperience):
+  
+app/controllers/work_controller.rb:8:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:21:13 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 6597)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 7108)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:21:13 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:21:13 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7261729922075261850)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7261729922075261850)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/profile" for ::1 at 2021-09-24 15:24:48 +1000
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 149.4ms | Allocations: 10918)
+Completed 200 OK in 179ms (Views: 158.1ms | ActiveRecord: 0.0ms | Allocations: 13475)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:24:48 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:24:48 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:24:52 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"", "company_name"=>"", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"", "description"=>""}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2325)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperience):
+  
+app/controllers/work_controller.rb:3:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:26:03 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6670)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 7239)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 15:26:04 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 6621)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 6980)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:26:04 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:26:05 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:26:08 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"", "company_name"=>"", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"", "description"=>""}
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 44.5ms | Allocations: 1832)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "works" does not exist
+LINE 8:  WHERE a.attrelid = '"works"'::regclass
+                            ^
+):
+  
+app/controllers/work_controller.rb:3:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:26:15 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 6636)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 6995)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:26:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/" for ::1 at 2021-09-24 15:26:17 +1000
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6704)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 7561)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:26:17 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:26:18 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 6626)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 6992)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 15:26:26 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6601)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 7111)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:26:26 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:26:26 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:26:35 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"asda", "company_name"=>"dasda", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"dasda", "description"=>"dasdasd"}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperience):
+  
+app/controllers/work_controller.rb:3:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:33:00 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 6601)
+Completed 200 OK in 47ms (Views: 46.2ms | Allocations: 7111)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:33:00 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:33:00 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:33:01 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6637)
+Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 6997)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:33:01 +1000
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:33:01 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:33:14 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"jknkj", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"jnijnonon"}
+Completed 500 Internal Server Error in 6ms (Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperience):
+  
+app/controllers/work_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:33:54 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 6602)
+Completed 200 OK in 17ms (Views: 16.2ms | Allocations: 7113)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:33:54 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:33:54 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:33:58 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"jknkj", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"jnijnonon"}
+Completed 500 Internal Server Error in 4ms (Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperiences):
+  
+app/controllers/work_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:34:00 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6638)
+Completed 200 OK in 24ms (Views: 23.0ms | Allocations: 6998)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 15:34:02 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 6628)
+Completed 200 OK in 20ms (Views: 19.3ms | Allocations: 6987)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:34:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:34:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:34:13 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"khvhgvkj"}
+Completed 500 Internal Server Error in 9ms (Allocations: 2349)
+
+
+  
+NameError (uninitialized constant WorkController::WorkExperiences):
+  
+app/controllers/work_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:35:05 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 6601)
+Completed 200 OK in 34ms (Views: 32.6ms | Allocations: 7112)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:35:05 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:38:04 +1000
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 129.4ms | Allocations: 10918)
+Completed 200 OK in 159ms (Views: 139.8ms | ActiveRecord: 0.0ms | Allocations: 13475)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:38:04 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:38:04 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:38:13 +1000
+  
+ActionController::RoutingError (uninitialized constant WorkController
+Did you mean?  WorksController):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:39:01 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 6741)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 7323)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:39:01 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:39:01 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:39:02 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 6631)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 6995)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:39:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:39:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:39:13 +1000
+Processing by WorksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"dasdasdasd"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2304)
+
+
+  
+NameError (uninitialized constant WorksController::WorkExperience):
+  
+app/controllers/works_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:40:51 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 6601)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms | Allocations: 7111)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:40:51 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:40:51 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:40:53 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6637)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 6999)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:40:53 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:40:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:41:00 +1000
+Processing by WorksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"aSa"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2307)
+
+
+  
+NameError (uninitialized constant WorksController::Works):
+  
+app/controllers/works_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:41:22 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 6601)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 7112)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:41:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:41:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:41:23 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6621)
+Completed 200 OK in 25ms (Views: 24.5ms | ActiveRecord: 0.0ms | Allocations: 6981)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:41:23 +1000
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:41:23 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:41:29 +1000
+Processing by WorksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"dasdas"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2305)
+
+
+  
+NameError (uninitialized constant WorksController::Works):
+  
+app/controllers/works_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:41:39 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 6636)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 6995)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:41:39 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:41:39 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:42:20 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.6ms | Allocations: 6606)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.0ms | Allocations: 7117)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:42:20 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:42:20 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:42:29 +1000
+Processing by WorksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"adsda"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorksController::WorkExperience):
+  
+app/controllers/works_controller.rb:7:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 15:45:30 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 6601)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms | Allocations: 7111)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:45:31 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:45:31 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 15:45:32 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6636)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 6995)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 15:45:32 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 15:45:32 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 15:45:39 +1000
+Processing by WorksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"asdas"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2297)
+
+
+  
+NameError (uninitialized constant WorksController::WorkExperience):
+  
+app/controllers/works_controller.rb:8:in `create'
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE DATABASE "ThePortfolio_Creator_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "ThePortfolio_Creator_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7261729922075261850)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7261729922075261850)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

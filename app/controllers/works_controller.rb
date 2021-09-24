@@ -1,7 +1,7 @@
-class WorkController < ApplicationController
+class WorksController < ApplicationController
   def index
     @work_experiences = WorkExperience.all
-    render 'show'
+    render 'index'
   end
 
   def create
