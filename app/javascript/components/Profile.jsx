@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Icons } from '../images/Icons'
 import { Component } from 'react'
-import { gsap } from 'gsap'
 import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
 import { WorkExperience } from '../components/WorkExperience'
 
