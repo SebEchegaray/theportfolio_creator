@@ -7,7 +7,9 @@ export default (
   <Router>
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/profile" exact component={Profile} />
+      <Route path="/profile" exact>
+        <Profile />
+      </Route>
     </Switch>
   </Router>
 );

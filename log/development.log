@@ -31418,3 +31418,1117 @@ Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-22 11:32:3
   
 ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
   
+Started GET "/profile" for ::1 at 2021-09-24 17:06:09 +1000
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 207)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 1ac11c4c2da7fb44532c
+Version: webpack 4.46.0
+Time: 7818ms
+Built at: 24/09/2021 5:06:24 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-9cc58e787e272ecd516c.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-9cc58e787e272ecd516c.js.map   1.89 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-9cc58e787e272ecd516c.js js/Index-9cc58e787e272ecd516c.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 175 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14405.5ms | Allocations: 12488)
+Completed 200 OK in 14449ms (Views: 14419.0ms | ActiveRecord: 0.0ms | Allocations: 15046)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:06:24 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:06:24 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 17:06:28 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 6725)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 7155)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:06:28 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:06:29 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 17:06:42 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"MyName", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Information Technology", "description"=>"alsdalksndlasd"}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 93.0ms | Allocations: 1859)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "works" does not exist
+LINE 8:  WHERE a.attrelid = '"works"'::regclass
+                            ^
+):
+  
+app/controllers/work_controller.rb:8:in `create'
+Started GET "/profile" for ::1 at 2021-09-24 17:07:20 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 6662)
+Completed 200 OK in 64ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 7025)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:07:20 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:07:20 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 17:09:03 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 6626)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:09:03 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:09:03 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started POST "/profile/work" for ::1 at 2021-09-24 17:09:17 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"dasda", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"a;sndaojsdla sd "}
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mWork Create (68.3ms)[0m  [1m[32mINSERT INTO "work_experiences" ("title", "company_name", "start_month", "start_year", "end_month", "end_year", "industry", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Software Developer"], ["company_name", "dasda"], ["start_month", "January"], ["start_year", 2018], ["end_month", "January"], ["end_year", 2020], ["industry", "work_experiences"], ["description", "a;sndaojsdla sd "], ["created_at", "2021-09-24 07:09:17.849687"], ["updated_at", "2021-09-24 07:09:17.849687"]]
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+No template found for WorkController#create, rendering head :no_content
+Completed 204 No Content in 188ms (ActiveRecord: 148.1ms | Allocations: 10487)
+
+
+Started POST "/profile/work" for ::1 at 2021-09-24 17:13:43 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"dasda", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"a;sndaojsdla sd "}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mWork Create (5.7ms)[0m  [1m[32mINSERT INTO "work_experiences" ("title", "company_name", "start_month", "start_year", "end_month", "end_year", "industry", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Software Developer"], ["company_name", "dasda"], ["start_month", "January"], ["start_year", 2018], ["end_month", "January"], ["end_year", 2020], ["industry", "work_experiences"], ["description", "a;sndaojsdla sd "], ["created_at", "2021-09-24 07:13:43.975308"], ["updated_at", "2021-09-24 07:13:43.975308"]]
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+No template found for WorkController#create, rendering head :no_content
+Completed 204 No Content in 49ms (ActiveRecord: 19.6ms | Allocations: 8285)
+
+
+Started POST "/profile/work" for ::1 at 2021-09-24 17:13:44 +1000
+Processing by WorkController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Software Developer", "company_name"=>"dasda", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"work_experiences", "description"=>"a;sndaojsdla sd "}
+  [1m[36mTRANSACTION (28.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mWork Create (5.4ms)[0m  [1m[32mINSERT INTO "work_experiences" ("title", "company_name", "start_month", "start_year", "end_month", "end_year", "industry", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Software Developer"], ["company_name", "dasda"], ["start_month", "January"], ["start_year", 2018], ["end_month", "January"], ["end_year", 2020], ["industry", "work_experiences"], ["description", "a;sndaojsdla sd "], ["created_at", "2021-09-24 07:13:44.549001"], ["updated_at", "2021-09-24 07:13:44.549001"]]
+  ↳ app/controllers/work_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/work_controller.rb:19:in `create'
+No template found for WorkController#create, rendering head :no_content
+Completed 204 No Content in 48ms (ActiveRecord: 36.3ms | Allocations: 2580)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 17:13:46 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 6630)
+Completed 200 OK in 54ms (Views: 52.9ms | ActiveRecord: 0.0ms | Allocations: 7105)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:13:46 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:13:46 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 17:40:48 +1000
+  
+Zeitwerk::NameError (expected file /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/app/controllers/api/work_api_controller.rb to define constant Api::WorkApiController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:288:in `const_get'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:288:in `block in constantize'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:284:in `each'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:284:in `inject'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:284:in `constantize'
+activesupport (6.1.4.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4.1) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4.1) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.3) lib/mini_profiler/profiler.rb:393:in `call'
+webpacker (5.4.2) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.4.0) lib/puma/configuration.rb:249:in `call'
+puma (5.4.0) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.4.0) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.4.0) lib/puma/request.rb:76:in `handle_request'
+puma (5.4.0) lib/puma/server.rb:440:in `process_client'
+puma (5.4.0) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/profile" for ::1 at 2021-09-24 17:41:33 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.4ms | Allocations: 6625)
+Completed 200 OK in 95ms (Views: 92.2ms | Allocations: 7135)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:41:34 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 17:41:46 +1000
+Processing by Api::WorkApiController#index as HTML
+  [1m[36mWork Load (6.9ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 120ms (Views: 112.5ms | ActiveRecord: 44.6ms | Allocations: 9872)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 17:42:17 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 6660)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 7019)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 17:43:44 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: df7b0ba23f68c9a1051f
+Version: webpack 4.46.0
+Time: 12672ms
+Built at: 24/09/2021 5:44:07 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-5ddb3489c23f764eec33.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-5ddb3489c23f764eec33.js.map   1.89 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-5ddb3489c23f764eec33.js js/Index-5ddb3489c23f764eec33.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22873.6ms | Allocations: 8186)
+Completed 200 OK in 22875ms (Views: 22874.2ms | ActiveRecord: 0.0ms | Allocations: 8546)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:44:07 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:44:07 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 17:47:50 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 37)
+[Webpacker] Compiling...
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:47:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:47:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: c91d9675e3e2f18d89d8
+Version: webpack 4.46.0
+Time: 9255ms
+Built at: 24/09/2021 5:48:09 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-c7c7e4ac07f0f512320e.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-c7c7e4ac07f0f512320e.js.map   1.89 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-c7c7e4ac07f0f512320e.js js/Index-c7c7e4ac07f0f512320e.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18715.1ms | Allocations: 86335)
+Completed 200 OK in 18724ms (Views: 18719.8ms | Allocations: 86695)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:48:09 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:48:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 17:48:09 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (66.2ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 201ms (Views: 200.5ms | ActiveRecord: 126.0ms | Allocations: 7615)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 17:58:50 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 04fd7bce0e14dfbee903
+Version: webpack 4.46.0
+Time: 9133ms
+Built at: 24/09/2021 5:59:06 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-f033b439cb03afa9d899.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-f033b439cb03afa9d899.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-f033b439cb03afa9d899.js js/Index-f033b439cb03afa9d899.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15982.7ms | Allocations: 8184)
+Completed 200 OK in 15985ms (Views: 15983.6ms | Allocations: 8544)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:59:06 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:59:06 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 17:59:06 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (6.7ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 205ms (Views: 204.2ms | ActiveRecord: 161.0ms | Allocations: 10952)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 17:59:24 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 17:59:24 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 17:59:51 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 8cb969214e414f5e989c
+Version: webpack 4.46.0
+Time: 8612ms
+Built at: 24/09/2021 6:00:08 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-20c3173825af31d174a8.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-20c3173825af31d174a8.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-20c3173825af31d174a8.js js/Index-20c3173825af31d174a8.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17082.4ms | Allocations: 8175)
+Completed 200 OK in 17086ms (Views: 17084.4ms | ActiveRecord: 0.0ms | Allocations: 8534)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:00:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:00:09 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:00:09 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (2.1ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 12.4ms | ActiveRecord: 2.1ms | Allocations: 3698)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:12:05 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 030449df7f44e18763dc
+Version: webpack 4.46.0
+Time: 9399ms
+Built at: 24/09/2021 6:12:20 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-60a7932b312693c9999d.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-60a7932b312693c9999d.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-60a7932b312693c9999d.js js/Index-60a7932b312693c9999d.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16458.3ms | Allocations: 8159)
+Completed 200 OK in 16466ms (Views: 16461.0ms | Allocations: 8670)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:12:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:12:22 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:12:22 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (3.4ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 398ms (Views: 391.3ms | ActiveRecord: 47.4ms | Allocations: 16787)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:15:06 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 0dc129d685498c48c0bb
+Version: webpack 4.46.0
+Time: 10000ms
+Built at: 24/09/2021 6:15:22 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-778dabdb32368c950071.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-778dabdb32368c950071.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-778dabdb32368c950071.js js/Index-778dabdb32368c950071.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16486.6ms | Allocations: 8192)
+Completed 200 OK in 16489ms (Views: 16487.6ms | ActiveRecord: 0.0ms | Allocations: 8552)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:15:23 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:15:23 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:15:23 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (3.5ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 42ms (Views: 37.2ms | ActiveRecord: 3.5ms | Allocations: 5344)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:15:39 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:15:39 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started POST "/api/work_experiences" for ::1 at 2021-09-24 18:16:09 +1000
+Processing by Api::WorkApiController#create as */*
+Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1207)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:18:28 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: d9f3bcfd7b4348e214de
+Version: webpack 4.46.0
+Time: 10406ms
+Built at: 24/09/2021 6:18:45 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-6217419c63ef9307905f.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-6217419c63ef9307905f.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-6217419c63ef9307905f.js js/Index-6217419c63ef9307905f.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17461.6ms | Allocations: 8175)
+Completed 200 OK in 17471ms (Views: 17469.6ms | ActiveRecord: 0.0ms | Allocations: 8534)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:18:45 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:18:45 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:18:46 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (2.8ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 2.8ms | Allocations: 1777)
+
+
+Started POST "/api/work_experiences" for ::1 at 2021-09-24 18:19:07 +1000
+Processing by Api::WorkApiController#create as */*
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1088)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:23:14 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.8ms | Allocations: 6648)
+Completed 200 OK in 92ms (Views: 87.8ms | ActiveRecord: 0.0ms | Allocations: 7007)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:23:14 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:23:14 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:23:15 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (10.9ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 77ms (Views: 65.1ms | ActiveRecord: 10.9ms | Allocations: 1777)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:23:21 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: aea8336ce43f14ae11c7
+Version: webpack 4.46.0
+Time: 9548ms
+Built at: 24/09/2021 6:23:37 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-202d9634c4f0d7a23edd.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-202d9634c4f0d7a23edd.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-202d9634c4f0d7a23edd.js js/Index-202d9634c4f0d7a23edd.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16434.3ms | Allocations: 8244)
+Completed 200 OK in 16436ms (Views: 16435.2ms | ActiveRecord: 0.0ms | Allocations: 8603)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:23:37 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:23:37 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:23:38 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (2.2ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 2.2ms | Allocations: 1905)
+
+
+Started POST "/api/work_experiences" for ::1 at 2021-09-24 18:23:57 +1000
+Processing by Api::WorkApiController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Dev", "company_name"=>"My Company", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"IT", "description"=>"Yay!", "work_api"=>{"title"=>"Dev", "company_name"=>"My Company", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"IT", "description"=>"Yay!"}}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+  [1m[36mWork Create (29.0ms)[0m  [1m[32mINSERT INTO "work_experiences" ("title", "company_name", "start_month", "start_year", "end_month", "end_year", "industry", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Dev"], ["company_name", "My Company"], ["start_month", "January"], ["start_year", 2018], ["end_month", "January"], ["end_year", 2020], ["industry", "IT"], ["description", "Yay!"], ["created_at", "2021-09-24 08:23:57.698874"], ["updated_at", "2021-09-24 08:23:57.698874"]]
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+Completed 200 OK in 69ms (Views: 0.5ms | ActiveRecord: 33.3ms | Allocations: 2633)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:25:35 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 6648)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.0ms | Allocations: 7007)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:25:35 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:25:35 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:25:36 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (20.2ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 41ms (Views: 19.6ms | ActiveRecord: 20.2ms | Allocations: 6108)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:28:58 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:28:58 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/profile" for ::1 at 2021-09-24 18:30:57 +1000
+Processing by ProfileController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering profile/show.html.erb within layouts/application
+  Rendered profile/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 55147c384d74cbd3fd82
+Version: webpack 4.46.0
+Time: 9844ms
+Built at: 24/09/2021 6:31:15 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-fef623a6f67b0da0d449.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-fef623a6f67b0da0d449.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-fef623a6f67b0da0d449.js js/Index-fef623a6f67b0da0d449.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17902.7ms | Allocations: 8190)
+Completed 200 OK in 17906ms (Views: 17904.0ms | Allocations: 8549)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:31:15 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/main.scss"):
+  
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:31:15 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/profile.scss"):
+  
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:31:16 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (3.5ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 356ms (Views: 354.7ms | ActiveRecord: 59.7ms | Allocations: 14268)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:34:54 +1000
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"profile"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 105)
+[Webpacker] Compiling...
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:34:59 +1000
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: 43854c8c7365c9cec7c8
+Version: webpack 4.46.0
+Time: 9447ms
+Built at: 24/09/2021 6:35:11 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-d6d8b92dc1e08f3d0002.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-d6d8b92dc1e08f3d0002.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-d6d8b92dc1e08f3d0002.js js/Index-d6d8b92dc1e08f3d0002.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.13 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17141.9ms | Allocations: 13655)
+Completed 200 OK in 17160ms (Views: 17157.3ms | ActiveRecord: 0.0ms | Allocations: 14547)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:35:11 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:35:11 +1000
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:35:11 +1000
+Processing by HomeController#index as */*
+Processing by HomeController#index as */*
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/main"}
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+  Parameters: {"path"=>"app/assets/stylesheets/main"}
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+  Rendering layout layouts/application.html.erb
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 37)
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.5ms | Allocations: 14135)
+Completed 200 OK in 126ms (Views: 118.8ms | ActiveRecord: 0.0ms | Allocations: 15534)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 190.7ms | Allocations: 18849)
+Completed 200 OK in 195ms (Views: 193.6ms | ActiveRecord: 0.0ms | Allocations: 19313)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 320.8ms | Allocations: 27303)
+Completed 200 OK in 338ms (Views: 328.4ms | ActiveRecord: 0.0ms | Allocations: 29930)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 355.4ms | Allocations: 27606)
+Completed 200 OK in 404ms (Views: 377.0ms | ActiveRecord: 0.0ms | Allocations: 34988)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:35:12 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:35:12 +1000
+Processing by HomeController#index as */*
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+  Rendering layout layouts/application.html.erb
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:35:13 +1000
+  Parameters: {"path"=>"app/assets/stylesheets/main"}
+  Rendering home/index.html.erb within layouts/application
+  Rendering layout layouts/application.html.erb
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (5.9ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 92.8ms | Allocations: 15906)
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms | Allocations: 16334)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 112.4ms | Allocations: 18562)
+Completed 200 OK in 116ms (Views: 114.5ms | ActiveRecord: 0.0ms | Allocations: 18931)
+
+
+Completed 200 OK in 222ms (Views: 48.5ms | ActiveRecord: 167.5ms | Allocations: 25400)
+
+
+Started POST "/api/work_experiences" for ::1 at 2021-09-24 18:35:46 +1000
+Processing by Api::WorkApiController#create as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"Chef", "company_name"=>"IDK", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Yay", "description"=>"It works?", "work_api"=>{"title"=>"Chef", "company_name"=>"IDK", "start_month"=>"January", "start_year"=>"2018", "end_month"=>"January", "end_year"=>"2020", "industry"=>"Yay", "description"=>"It works?"}}
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+  [1m[36mWork Create (9.4ms)[0m  [1m[32mINSERT INTO "work_experiences" ("title", "company_name", "start_month", "start_year", "end_month", "end_year", "industry", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["title", "Chef"], ["company_name", "IDK"], ["start_month", "January"], ["start_year", 2018], ["end_month", "January"], ["end_year", 2020], ["industry", "Yay"], ["description", "It works?"], ["created_at", "2021-09-24 08:35:46.823202"], ["updated_at", "2021-09-24 08:35:46.823202"]]
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/work_api_controller.rb:19:in `create'
+Completed 200 OK in 45ms (Views: 1.3ms | ActiveRecord: 30.0ms | Allocations: 2750)
+
+
+Started GET "/profile" for ::1 at 2021-09-24 18:36:37 +1000
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"profile"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/sebastianechegaray/Desktop/Final_Project_SEI/ThePortfolio_Creator/public/packs
+[Webpacker] Hash: ef30998b228069d23bba
+Version: webpack 4.46.0
+Time: 9406ms
+Built at: 24/09/2021 6:36:53 pm
+                                       Asset       Size       Chunks                         Chunk Names
+            js/Index-28b612501acb0df05f23.js   1.84 MiB        Index  [emitted] [immutable]  Index
+        js/Index-28b612501acb0df05f23.js.map    1.9 MiB        Index  [emitted] [dev]        Index
+      js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+  js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                               manifest.json  937 bytes               [emitted]              
+media/images/ Personalized_Icon-3c43ec6a.png   25.2 KiB               [emitted]              
+media/images/Profile_Icon_White-c41e9d48.png   6.91 KiB               [emitted]              
+       media/images/Resume_Icon-e18230e9.png   9.45 KiB               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+Entrypoint Index = js/Index-28b612501acb0df05f23.js js/Index-28b612501acb0df05f23.js.map
+[./app/assets/images/ Personalized_Icon.png] 90 bytes {Index} [built]
+[./app/assets/images/Profile_Icon_White.png] 90 bytes {Index} [built]
+[./app/assets/images/Resume_Icon.png] 83 bytes {Index} [built]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/images/Icons.jsx] 305 bytes {Index} [built]
+[./app/javascript/packs/Index.jsx] 537 bytes {Index} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 1.13 KiB {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 176 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16250.3ms | Allocations: 8176)
+Completed 200 OK in 16253ms (Views: 16251.7ms | ActiveRecord: 0.0ms | Allocations: 8536)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:36:54 +1000
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:36:54 +1000
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/main"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 10921)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.0ms | Allocations: 11283)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 123.6ms | Allocations: 13449)
+Completed 200 OK in 187ms (Views: 185.4ms | ActiveRecord: 0.0ms | Allocations: 14738)
+
+
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:36:54 +1000
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 6645)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms | Allocations: 7006)
+
+
+Started GET "/api/work_experiences" for ::1 at 2021-09-24 18:36:54 +1000
+Processing by Api::WorkApiController#index as */*
+  [1m[36mWork Load (3.5ms)[0m  [1m[34mSELECT "work_experiences".* FROM "work_experiences"[0m
+  ↳ app/controllers/api/work_api_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 10.9ms | ActiveRecord: 3.5ms | Allocations: 2071)
+
+
+Started GET "/app/assets/stylesheets/main.scss" for ::1 at 2021-09-24 18:38:39 +1000
+Started GET "/app/assets/stylesheets/profile.scss" for ::1 at 2021-09-24 18:38:39 +1000
+Processing by HomeController#index as */*
+  Parameters: {"path"=>"app/assets/stylesheets/main"}
+  Rendering layout layouts/application.html.erb
+Processing by HomeController#index as */*
+  Rendering home/index.html.erb within layouts/application
+  Parameters: {"path"=>"app/assets/stylesheets/profile"}
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 37)
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 37)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.8ms | Allocations: 11929)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 0.0ms | Allocations: 12747)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 126.9ms | Allocations: 13924)
+Completed 200 OK in 130ms (Views: 129.2ms | ActiveRecord: 0.0ms | Allocations: 14517)
+
+

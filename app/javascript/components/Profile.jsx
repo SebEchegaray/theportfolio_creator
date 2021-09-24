@@ -4,6 +4,7 @@ import { Icons } from '../images/Icons'
 import { Component } from 'react'
 import { gsap } from 'gsap'
 import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
+import { WorkExperience } from '../components/WorkExperience'
 
 const { useEffect, useRef } = React
 
@@ -22,6 +23,23 @@ const Profile = () => {
   const formHandleClick = (event) => {
     event.preventDefault()
     setActive(!isActive)
+  }
+
+  const createWorkExperience = (event) => {
+    event.preventDefault()
+    const data = Object.fromEntries(new FormData(event.target))
+    const token = document.querySelector('meta[name="csrf-token"]').content;
+    fetch("/api/work_experiences", {
+      method: "post",
+      headers: {
+        "X-CSRF-Token": token,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => {
+      console.log(response.json())
+    })
   }
 
   return (
@@ -53,8 +71,12 @@ const Profile = () => {
           </a>
         </div>
 
+        <div>
+          <WorkExperience />
+        </div>
+
         {/* Work Experience submit form */}
-        <form action="/profile/work" method="POST" className={`work-submit-form ${isActive ? "open__animation-info" : ""}`}>
+        <form onSubmit={event => createWorkExperience(event)} className={`work-submit-form ${isActive ? "open__animation-info" : ""}`}>
         <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
           <section className="form__section">
             <div className="field">
