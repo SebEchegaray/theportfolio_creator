@@ -1,6 +1,6 @@
-*, html { margin: 0; padding: 0; box-sizing: border-box; }
+*, html, body { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { font-size: 10px;}
+html { font-size: 10px; }
 
 // Color variables
 $white: #FFFFFF;
@@ -19,6 +19,9 @@ $mistyBlue: #385E72;
 $boxShadow: #6E6E6E;
 
 body {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
   background: $lightBlueGray;
   color: $darkBlue;
 }
@@ -29,7 +32,7 @@ body {
   width: 100%;
   padding: 1rem 0 1rem;
   text-align: center;
-  background: $gold;
+  background: $yellow;
   box-shadow: 0 0.5rem 2rem $boxShadow;
   .logo__wrapper {
     display: flex;

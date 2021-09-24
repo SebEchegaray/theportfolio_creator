@@ -1,6 +1,7 @@
 // Color variables
 $white: #FFFFFF;
 $whiteTransparent: rgba(255, 255, 255, 0.3);
+$whiteSlightTransparent: rgba(255, 255, 255, 0.4);
 $black: #000000;
 $blueGray: #90ADC6;
 $lightBlueGray: #D9E4EC;
@@ -59,6 +60,10 @@ $boxShadow: #6E6E6E;
     margin-bottom: 2vh;
     border-radius: 50%;
     border: 0.2rem solid $blueGray;
+    .profile__picture {
+      width: 100%;
+      height: auto;
+    }
   }
   .info {
     width: 100%;
@@ -74,18 +79,18 @@ $boxShadow: #6E6E6E;
       justify-content: space-between;
       align-items: center;
     }
-    .work-section__title {
+    .section__title {
       font-family: 'Prompt', sans-serif;
       font-size: 2.658rem;
       color: $white;
     }
     .add__link {
-      .work-section__title {
+      .section__title {
         font-style: italic;
         color: $white;
         font-size: 1.7rem;
       }
-      .work-section__title:hover {
+      .section__title:hover {
         text-decoration: underline;
       }
       text-decoration: none;
@@ -93,13 +98,15 @@ $boxShadow: #6E6E6E;
     }
   }
 
-  .work-submit-form {
+  .work-submit-form,
+  .education-submit-form {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 50%; left: 150%; transform: translate(-50%, -50%);
+    top: 15%;
+    left: 150%; transform: translateX(-50%);
     width: 60%;
-    height: 80%;
+    height: 90rem;
     overflow: scroll;
     padding: 2rem 4rem;
     border: 0.2rem solid $white;
@@ -150,6 +157,7 @@ $boxShadow: #6E6E6E;
         height: 5rem;
         border: none;
         border-radius: 0.7rem;
+        margin-bottom: 5rem;
         background: $mistyBlue;
         color: $pewter;
         transition: 0.2s ease-out;
@@ -160,14 +168,49 @@ $boxShadow: #6E6E6E;
       }
     }
   }
-  .open__animation-info {
+  .open__animation-info,
+  .open__animation-info-edu {
     left: 50%;
     transition: 0.3s;
-    // animation-name: sizing;
-    // animation-duration: 2s;
-    // animation-timing-function: ease-out;
-    // animation-iteration-count: 1;
   }
 }
 
 // Profile
+
+// Info Sections Content
+.info__display {
+  width: 100%;
+  margin-top: 1rem;
+  .each__experience {
+    width: 100%;
+    padding: 1rem 1rem 2rem;
+    color: $darkerBlue;
+    background: $yellow;
+    margin-bottom: 1.5rem;
+    .row {
+      display: flex;
+      align-items: baseline;
+      padding: 1rem 0.5rem;
+      border-bottom: 0.1rem solid $darkerBlue;
+    }
+    h1 {
+      font-family: 'Lalezar', cursive;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      margin-right: 0.5rem;
+    }
+    .content__h1 {
+      font-family: 'Prompt', sans-serif;
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .space-right {
+      margin-right: 2rem;
+    }
+    .column {
+      flex-direction: column;
+    }
+  }
+}
+
+// Info Sections Content
