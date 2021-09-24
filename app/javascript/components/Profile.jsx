@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Icons } from '../images/Icons'
-import { Component } from 'react'
 import AddAPhotoIcon from '@material-ui/icons/AddAPhoto';
 import { WorkExperience } from '../components/WorkExperience'
 
@@ -27,6 +25,7 @@ const Profile = () => {
   const createWorkExperience = (event) => {
     event.preventDefault()
     const data = Object.fromEntries(new FormData(event.target))
+    console.log(data)
     const token = document.querySelector('meta[name="csrf-token"]').content;
     fetch("/api/work_experiences", {
       method: "post",
@@ -38,6 +37,7 @@ const Profile = () => {
     })
     .then(response => {
       console.log(response.json())
+      setActive(!isActive)
     })
   }
 
@@ -118,7 +118,7 @@ const Profile = () => {
               <label htmlFor="description">Description</label>
               <textarea name="description"></textarea>
             </div>
-            <button className="save__btn">Save</button>
+            <button className="save__btn" type="submit">Save</button>
           </section>
         </form>
         {/* Work Experience submit form */}
